@@ -6,15 +6,21 @@ import 'dotenv/config';
 
 //VARIABLES
 //db configuration
-const dbConfiguration = {
-    host: 'localhost',
-    user: 'root',
-    password: 'password',
-    databse: 'prodotti'
+const dbConfig = {
+    host: process.env.DB_HOST,
+    user: process.env.DB_USER,
+    password: process.env.DB_PASSWORD,
+    database: process.env.DB_NAME
 }
 
 //FUNCTIONS
 //import csv
-async function importCSV(){
-    
+async function importCSV() {
+    // try-catch: run the code into try, if there is an error, run the code into catch
+    try {
+        //code
+    // err is the error that is generate from node or mySQL12
+    } catch (err) {
+      console.error('❌ Error of connection to DB:', err.message);
+    }
 }
