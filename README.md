@@ -12,10 +12,7 @@
 "devDependencies": {
     <!-- every time the file was updated, the server restart -->
     "nodemon": "^3.1.10"
-  }
+}
 
 <!-- package.json -->
 "type": "module", <!-- for ES Modules -->
-
-<!-- .gitignore -->
-for node_modules and .env files; .gitignore doesn't save the files in the repo on gitHub
